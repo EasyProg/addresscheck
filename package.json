@@ -1,0 +1,53 @@
+{
+  "name": "addresscheck",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "jest": "^22.4.2",
+    "js-sha3": "^0.7.0",
+    "keccak": "^1.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-modal": "^3.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.0.0-alpha.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "jesttest": "jest"
+  },
+  "jest": {
+    "modulePaths": [
+      "./src",
+      "./node_modules"
+    ],
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "verbose": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "aurelia-(.*)": "<rootDir>/node_modules/$1"
+    }
+  }
+}
